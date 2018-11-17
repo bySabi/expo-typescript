@@ -1,38 +1,28 @@
-import * as React from "react";
-import {View, Text} from 'react-native';
-import AppButton from 'components/AppButton'
+import React, { useState } from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 
+function Counter() {
+  let [count, setCount] = useState(0);
 
-interface State {
-  message: string,
-  count: number,
+  return <Text onPress={() => setCount(count + 1)}>{count}</Text>;
 }
 
-export default class Main extends React.Component<{}, State> {
-  state = {
-    message: "this is a typescript counter",
-    count: 0,
-  };
-  componentDidMount() {
-    console.debug("expo-typescript app mounted")
-  }
+export default class App extends React.Component {
   render() {
     return (
-      <View style={{
-        flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'space-around',
-      }}>
-        <Text>{this.state.message}</Text>
-
-        <Text>Count: {this.state.count}</Text>
-
-        <AppButton
-          title={"increment"}
-          onPress={() => this.setState({count: this.state.count + 1})}
-        />
+      <View style={styles.container}>
+        <Text>Open up App.js to start working on your appp!</Text>
+        <Counter />
       </View>
     );
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
