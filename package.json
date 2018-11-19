@@ -11,7 +11,7 @@
     "eject": "expo eject",
     "test": "jest",
     "test:watch": "jest --watchAll",
-    "lint": "tslint src/**/*.ts"
+    "lint": "tslint src/**/*.{ts,tsx}"
   },
   "dependencies": {
     "expo": "31.x.x",
@@ -22,7 +22,7 @@
   "devDependencies": {
     "@babel/core": "7.x.x",
     "@babel/preset-typescript": "7.x.x",
-    "@types/expo": "30.x.x",
+    "@types/expo": "latest",
     "@types/expo__vector-icons": "6.x.x",
     "@types/fbemitter": "2.x.x",
     "@types/jest": "23.x.x",
@@ -30,12 +30,13 @@
     "@types/react": "latest",
     "@types/react-native": "latest",
     "@types/react-navigation": "latest",
-    "@types/react-test-renderer": "16.x.x",
+    "@types/react-test-renderer": "latest",
     "babel-core": "^7.0.0-bridge.0",
     "babel-plugin-module-resolver": "3.x.x",
     "babel-preset-expo": "5.x.x",
     "concurrently": "4.x.x",
     "jest-expo": "31.x.x",
+    "react-test-renderer": "next",
     "tslint": "5.x.x",
     "tslint-config-prettier": "1.x.x",
     "typescript": "next"
