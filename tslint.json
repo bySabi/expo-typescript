@@ -1,8 +1,5 @@
 {
-  "extends": [
-    "tslint:latest",
-    "tslint-config-prettier"
-  ],
+  "extends": ["tslint:latest", "tslint-config-prettier"],
   "rules": {
     "missing-jsdoc": false,
     "newline-before-return": false,
@@ -12,6 +9,7 @@
     "no-console": false,
     "no-empty": false,
     "ordered-imports": false,
-    "member-access": false
+    "member-access": false,
+    "no-implicit-dependencies": false
   }
 }
