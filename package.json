@@ -17,8 +17,7 @@
     "expo": "31.x.x",
     "react": "next",
     "react-native": "https://github.com/expo/react-native/archive/sdk-31-with-hooks-experimental.tar.gz",
-    "react-navigation": "3.x.x",
-    "upgrade": "^1.1.0"
+    "react-navigation": "3.x.x"
   },
   "devDependencies": {
     "@babel/core": "7.x.x",
